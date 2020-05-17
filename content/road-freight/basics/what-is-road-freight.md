@@ -46,6 +46,8 @@ gantt
 
 In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworth party is usually invovled. This is the forwarder. The forwarder takes in shipments from the shipper and finds a carrier for the shipment.
 
+Though trivial, it is important to point out that a bunch of other parties, such as infrastructure related parties, policy makers, security staff, routing services, may also participate in this trip.
+
 ## How is Road Freight Doing
 
 > In physics, the work is measured by force multiplied by displacement.
