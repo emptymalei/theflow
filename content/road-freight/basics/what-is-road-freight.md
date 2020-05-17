@@ -16,9 +16,13 @@ A large part of human civilization is to move materials around. Many has played 
 
 In this part, we will restrict ourselves to road freight for simplicity.
 
-![](../assets/what/undraw_Ride_till_I_can_no_more_44wq.png)
+{{< figure src="../assets/what/undraw_Ride_till_I_can_no_more_44wq.png" caption="source: undraw.co">}}
 
 Road freight is a complex system and involves multiple fields of research. If we were to define the objectives of road freight, one of them would be moving materials of some properties (weight, volume, and special requirements) and go through a squence of locations $(P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n)$, under some certain policies (speed limits, height limit, travel restrictions, etc).
+
+## Several Parties Involved
+
+There are two core parties in road freight: the shipper and the carrier. The shipper is the party who provides the load and sets the expectations. The carrier is the party who transports the load.
 
 A simple case is shown in the following Gantt chart.
 
@@ -40,6 +44,7 @@ gantt
     Receive the Payment             :2020-01-07, 1d
 {{</mermaid>}}
 
+In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworth party is usually invovled. This is the forwarder. The forwarder takes in shipments from the shipper and finds a carrier for the shipment.
 
 ## How is Road Freight Doing
 
@@ -48,7 +53,6 @@ gantt
 To measure the "work" done by road freight, a convinient measure is weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
 
 Throughout the years, the "work" done by road freight has been growing.
-
 
 {{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
 

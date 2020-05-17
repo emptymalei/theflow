@@ -10,9 +10,6 @@ Outline of Part I: Road Freight.
 
 - Basics
   - What is Road Freight
-    - Components of Road Freight
-    - What is being Transported by Road Freight
-    - Comparisons between Road Freight, Ocean Freight, Rail Freight and Air Freight
   - Costs of Road Freight
   - Road Freight and Economics
   - Trends in Road Freight
