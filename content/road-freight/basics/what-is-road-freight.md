@@ -20,8 +20,6 @@ In this part, we will restrict ourselves to road freight for simplicity.
 
 Road freight is a complex system and involves multiple fields of research. If we were to define the objectives of road freight, one of them would be moving materials of some properties (weight, volume, and special requirements) and go through a squence of locations $(P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n)$, under some certain policies (speed limits, height limit, travel restrictions, etc).
 
-## A Case
-
 A simple case is shown in the following Gantt chart.
 
 {{<mermaid>}}
@@ -43,9 +41,20 @@ gantt
 {{</mermaid>}}
 
 
-## How Important is Road Freight
+## How is Road Freight Doing
 
-![](https://img.shields.io/badge/WORK-IN%20PROGRESS-orange?style=for-the-badge)
+> In physics, the work is measured by force multiplied by displacement.
+
+To measure the "work" done by road freight, a convinient measure is weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
+
+Throughout the years, the "work" done by road freight has been growing.
+
+
+{{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
+
+The investment on road infrastructure has always been huge for many countries.
+
+{{< figure src="../assets/what/road_freight_investiment_history.png" title="Road Freight Investment by Year" caption="ITF (2020), Transport infrastructure investment and maintenance, ITF Transport Statistics (database)">}}
 
 
 
@@ -53,3 +62,5 @@ gantt
 ## References
 
 1. https://www.itf-oecd.org/itf-transport-outlook-project
+2. [OECD (2020), Freight transport (indicator).](https://data.oecd.org/transport/freight-transport.htm) doi: 10.1787/708eda32-en (Accessed on 17 May 2020)
+3. [ITF (2020), "Transport infrastructure investment and maintenance", ITF Transport Statistics (database), https://doi.org/10.1787/g2g55573-en (accessed on 17 May 2020).](https://stats.oecd.org/BrandedView.aspx?oecd_bv_id=trsprt-data-en&doi=g2g55573-en#)
