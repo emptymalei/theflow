@@ -12,15 +12,32 @@ tags:
 >
 > -- J. P. Rodrigue, C. Comtois, and B. Slack, The geography of transport systems. 2006.
 
-A large part of human civilization is to move materials around. Many has played or have been playing their own parts in this great trandition and road transportation is one of the oldest and most important one.
-
-In this part, we will restrict ourselves to road freight for simplicity.
+A large part of human civilization is to move materials around. Many have played or have been playing their own parts in this great trandition and road transportation is one of the most important one.
 
 {{< figure src="../assets/what/undraw_Ride_till_I_can_no_more_44wq.png" caption="source: undraw.co">}}
 
-Road freight is a complex system and involves multiple fields of research. If we were to define the objectives of road freight, one of them would be moving materials of some properties (weight, volume, and special requirements) and go through a squence of locations $(P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n)$, under some certain policies (speed limits, height limit, travel restrictions, etc).
+Road transportation can either be moving passengers or goods. The latter is also called road freight. In this part, we will focus on road freight.
 
-## Several Parties Involved
+Road freight is a rather complex system. It depends on multiple fields of research.
+
+## Definition of the Problem
+
+{{< info title="What is Road Freight" >}} The core activity of road freight is to move materials of some properties (weight $W$, volume $V$, and special requirements), $\mathscr L(W,V,\cdots)$, through route $\mathscr R$ in the road network that connects a set of locations $\\{P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n\\}$, under some certain policies $\mathscr P$ (order of locations, speed limits, height limit, travel restrictions, etc), using predefined vehicles $\mathscr V$. {{< /info >}}
+
+In the problem, four key factors are involved:
+
+1. Loads: $\mathscr L$;
+2. Routes: $\mathscr R$;
+3. Policies: $\mathscr P$;
+4. Vehicles/Capacities: $\mathscr V$
+
+Loads are loaded on to the vehicles at the pickup location and unloaded at the dropoff location. Different loads requires different facilities and equipments at pickup and dropoff, as well as different vehicles, routes, and drivers during transportation. Efficient routing also involves information on transportation time requirements, road and traffic status, and weather forecast. Different policies may be enforced by the government and shippers. The vehicles or capacities to be used is a result of the loads and policies.
+
+In many cases, the four factors are interconnect which renders a global optimization problem. Though trivial, it is important to point out that a bunch of other parties, such as infrastructure related parties, policy makers, security staff, routing services, may also participate in this trip.
+
+
+
+### Shipper and Carriers
 
 There are two core parties in road freight: the shipper and the carrier. The shipper is the party who provides the load and sets the expectations. The carrier is the party who transports the load.
 
@@ -44,13 +61,20 @@ gantt
     Receive the Payment             :2020-01-07, 1d
 {{</mermaid>}}
 
-In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworth party is usually invovled. This is the forwarder. The forwarder takes in shipments from the shipper and finds a carrier for the shipment.
+### Forwarders and Marketplaces
 
-Though trivial, it is important to point out that a bunch of other parties, such as infrastructure related parties, policy makers, security staff, routing services, may also participate in this trip.
+In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworth party is usually invovled. This can be either a forwarder or a marketplace. A forwarder takes in shipments from the shipper and finds a carrier for the shipment. A marketplace connects the shippers and carriers directly.
+
+### Network and Terminals
+
+The shipment may not go directly from the pickup location to the dropoff location. Networks and terminals may be use to aggregate shipments or change of transportation mode to maximize the efficiency.
+
+{{< figure src="../assets/what/road_freight_terminals.png" title="Network and Terminals">}}
+
 
 ## How is Road Freight Doing
 
-> In physics, the work is measured by force multiplied by displacement.
+> In physics, the work is measured by force multiplied by displacement. The work done per unit time is the power. There are analogies of work and power in road freight.
 
 To measure the "work" done by road freight, a convinient measure is weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
 
@@ -58,15 +82,14 @@ Throughout the years, the "work" done by road freight has been growing.
 
 {{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
 
-The investment on road infrastructure has always been huge for many countries.
+The investment on road infrastructure each year has always been huge in many countries.
 
 {{< figure src="../assets/what/road_freight_investiment_history.png" title="Road Freight Investment by Year" caption="ITF (2020), Transport infrastructure investment and maintenance, ITF Transport Statistics (database)">}}
 
 
-
-
 ## References
 
-1. https://www.itf-oecd.org/itf-transport-outlook-project
+1. [ITF Transport Outlook Project
+](https://www.itf-oecd.org/itf-transport-outlook-project)
 2. [OECD (2020), Freight transport (indicator).](https://data.oecd.org/transport/freight-transport.htm) doi: 10.1787/708eda32-en (Accessed on 17 May 2020)
 3. [ITF (2020), "Transport infrastructure investment and maintenance", ITF Transport Statistics (database), https://doi.org/10.1787/g2g55573-en (accessed on 17 May 2020).](https://stats.oecd.org/BrandedView.aspx?oecd_bv_id=trsprt-data-en&doi=g2g55573-en#)

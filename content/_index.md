@@ -12,3 +12,5 @@ I need a big picture. To build this big picture, I need to learn from others and
 Besides this utilitarian point of view, I am also curious about the hidden principles of logistics. I am trained as a theoretical physicist. In essence, theoretical physicist develops compressing algorithms to describe the complicated physical world. What are the good representations of logistics? Are there compressing algorithms to summarize these representations using simple principles? How do we understand them and create better logistics systems? I am sure there are already answers to these questions. I will dig them up.
 
 To make sure that I do not rush into the wrong way, I need your expertise. Teach me and I will reward the community.
+
+For an overview of my plans and progress, I have created some [kanban boards on GitHub](https://github.com/emptymalei/theflow/projects).
