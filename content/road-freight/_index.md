@@ -5,6 +5,8 @@ display: article
 search: true
 ---
 
+![](assets/road_freight_cover.png)
+
 Outline of Part I: Road Freight.
 
 
