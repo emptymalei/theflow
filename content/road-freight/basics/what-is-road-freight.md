@@ -78,15 +78,15 @@ The shipment may not go directly from the pickup location to the dropoff locatio
 
 To measure the "work" done by road freight, a convenient measure is the weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
 
-In Europe, many countries rely on road freight for transportation. To get a grasp of this idea, we measure the share of road freight among all the inland transportation modes using the percentage of tonne-kilometer transported by road freight.
+In Europe, many countries rely on road freight for transportation. To get a grasp of this idea, we measure the share of road freight of inland transportation using the percentage of tonne-kilometer transported by road freight. Most EU countries has more than half of the freight transported by road freight. In some countries, such as Malta, road freight is the single most important mode of freight transportation.
 
 {{< figure src="../assets/what/eurostats_road_freight_share_in_modes.png" title="Road Freight Share in EU" caption="Using data from [eurostats](https://ec.europa.eu/eurostat/tgm/refreshTableAction.do?tab=table&plugin=1&pcode=t2020_rk320&language=en)">}}
 
-Throughout the years, the "work" done by road freight has been growing.
+For the top road freight countries, the "work" done by road freight has been growing in the world in recent years. China and India even had one order of magnitude growth in 20 years.
 
 {{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="Using data from OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
 
-The investment on road infrastructure each year has always been huge in many countries.
+Meanwhile, the investment on road infrastructure each year has always been huge in many countries.
 
 {{< figure src="../assets/what/road_freight_investiment_history.png" title="Road Freight Investment by Year" caption="Using data from ITF (2020), Transport infrastructure investment and maintenance, ITF Transport Statistics (database)">}}
 
