@@ -12,7 +12,7 @@ tags:
 >
 > -- J. P. Rodrigue, C. Comtois, and B. Slack, The geography of transport systems. 2006.
 
-A large part of human civilization is to move materials around. Many have played or have been playing their own parts in this great trandition and road transportation is one of the most important one.
+A large part of human civilization is to move materials around. Many have played or have been playing their own parts in this great tradition and road transportation is one of the most important modes.
 
 {{< figure src="../assets/what/undraw_Ride_till_I_can_no_more_44wq.png" caption="source: undraw.co">}}
 
@@ -31,9 +31,9 @@ In the problem, four key factors are involved:
 3. Policies: $\mathscr P$;
 4. Vehicles/Capacities: $\mathscr V$
 
-Loads are loaded on to the vehicles at the pickup location and unloaded at the dropoff location. Different loads requires different facilities and equipments at pickup and dropoff, as well as different vehicles, routes, and drivers during transportation. Efficient routing also involves information on transportation time requirements, road and traffic status, and weather forecast. Different policies may be enforced by the government and shippers. The vehicles or capacities to be used is a result of the loads and policies.
+Loads are loaded on to the vehicles at the pickup location and unloaded at the dropoff location. Different loads requires different facilities and equipment at pickup and dropoff, as well as different vehicles, routes, and drivers during transportation. Efficient routing also involves information on transportation time requirements, road and traffic status, and weather forecast. Different policies may be enforced by the government and shippers. The vehicles or capacities to be used is a result of the loads and policies.
 
-In many cases, the four factors are interconnect which renders a global optimization problem. Though trivial, it is important to point out that a bunch of other parties, such as infrastructure related parties, policy makers, security staff, routing services, may also participate in this trip.
+In many cases, the four factors are interconnect which renders a global optimization problem. Though trivial, it is important to point out that a bunch of other parties, such as infrastructure-related parties, policy makers, security staff, routing services, may also participate in this trip.
 
 
 
@@ -63,11 +63,11 @@ gantt
 
 ### Forwarders and Marketplaces
 
-In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworth party is usually invovled. This can be either a forwarder or a marketplace. A forwarder takes in shipments from the shipper and finds a carrier for the shipment. A marketplace connects the shippers and carriers directly.
+In reality, connecting the shipper and carrier is no easy task. Apart from the two core parties, a third trustworthy party is usually involved. This can be either a forwarder or a marketplace. A forwarder takes in shipments from the shipper and finds a carrier for the shipment. A marketplace connects the shippers and carriers directly.
 
 ### Network and Terminals
 
-The shipment may not go directly from the pickup location to the dropoff location. Networks and terminals may be use to aggregate shipments or change of transportation mode to maximize the efficiency.
+The shipment may not go directly from the pickup location to the dropoff location. Networks and terminals may be use to aggregate shipments or change of transportation mode to maximize efficiency.
 
 {{< figure src="../assets/what/road_freight_terminals.png" title="Network and Terminals">}}
 
@@ -76,20 +76,26 @@ The shipment may not go directly from the pickup location to the dropoff locatio
 
 > In physics, the work is measured by force multiplied by displacement. The work done per unit time is the power. There are analogies of work and power in road freight.
 
-To measure the "work" done by road freight, a convinient measure is weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
+To measure the "work" done by road freight, a convenient measure is the weight multiplied by the distance of the trip. As an example, the unit of this "work" may be million tonne-kilometer.
+
+In Europe, many countries rely on road freight for transportation. To get a grasp of this idea, we measure the share of road freight among all the inland transportation modes using the percentage of tonne-kilometer transported by road freight.
+
+{{< figure src="../assets/what/eurostats_road_freight_share_in_modes.png" title="Road Freight Share in EU" caption="Using data from [eurostats](https://ec.europa.eu/eurostat/tgm/refreshTableAction.do?tab=table&plugin=1&pcode=t2020_rk320&language=en)">}}
 
 Throughout the years, the "work" done by road freight has been growing.
 
-{{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
+{{< figure src="../assets/what/road_freight_volume_history.png" title="Road Freight Power by Year" caption="Using data from OECD (2020), Freight transport (indicator). This figure excludes rail freight.">}}
 
 The investment on road infrastructure each year has always been huge in many countries.
 
-{{< figure src="../assets/what/road_freight_investiment_history.png" title="Road Freight Investment by Year" caption="ITF (2020), Transport infrastructure investment and maintenance, ITF Transport Statistics (database)">}}
+{{< figure src="../assets/what/road_freight_investiment_history.png" title="Road Freight Investment by Year" caption="Using data from ITF (2020), Transport infrastructure investment and maintenance, ITF Transport Statistics (database)">}}
+
 
 
 ## References
 
 1. [ITF Transport Outlook Project
 ](https://www.itf-oecd.org/itf-transport-outlook-project)
+2. [Modal split of freight transpor (% in total inland freight tonne-km) by Eurostats](https://ec.europa.eu/eurostat/tgm/refreshTableAction.do?tab=table&plugin=1&pcode=t2020_rk320&language=en)
 2. [OECD (2020), Freight transport (indicator).](https://data.oecd.org/transport/freight-transport.htm) doi: 10.1787/708eda32-en (Accessed on 17 May 2020)
 3. [ITF (2020), "Transport infrastructure investment and maintenance", ITF Transport Statistics (database), https://doi.org/10.1787/g2g55573-en (accessed on 17 May 2020).](https://stats.oecd.org/BrandedView.aspx?oecd_bv_id=trsprt-data-en&doi=g2g55573-en#)
