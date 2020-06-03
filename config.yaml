@@ -37,6 +37,10 @@ menu:
     - name: Road Freight Basics
       parent: rf
       url: /road-freight/basics
+    - name: Economics
+      identifier: econ
+      url: /economics
+      weight: 2
 
 
 
