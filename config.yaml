@@ -41,6 +41,9 @@ menu:
       identifier: econ
       url: /economics
       weight: 2
+    - name: Auction Theory
+      parent: econ
+      url: /economics/auction-theory-basics
 
 
 
