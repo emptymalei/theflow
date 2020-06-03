@@ -26,7 +26,7 @@ In the following sections, we will come up with a formal representation of an au
 
 ## Expected Utility
 
-The valuation $v_i$ doesn't necessary equal to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
+The valuation $v_i$ doesn't necessariy equal to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
 
 To measure the payoff of a bidding price $b_i$ for bidder $\mathscr B_i$, we introduce the expected utility, $\bar U_i$, e.g.,
 
