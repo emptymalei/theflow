@@ -115,7 +115,7 @@ u_i =  v_i - b_i - f_i,
 
 where $f_i$ is a function of the payment. The risk attitude is best tested in a fair lottery where the expected payoff is the same as the investment. In such a fair lottery, the utility for \ref{eqn-auction-utility-payoff-and-payment} depends on the payment and the willingness to pay is different at different costs.
 
-Risk neutral bidders are willing to participate at different costs based on payoff. Risk aversion bidders are less willing to participate at higher costs and risk seeking bidders are more willing to participate at higher costs[^ShohamLeyton-Brown].
+Risk neutral bidders are willing to participate at different payment based on payoff. Risk aversion bidders are less willing to participate at higher payment and risk seeking bidders are more willing to participate at higher payment[^ShohamLeyton-Brown].
 
 
 ## Types of Auctions
