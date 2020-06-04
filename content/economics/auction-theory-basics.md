@@ -26,24 +26,14 @@ In general, we will observe that an auction has
 
 1. the winner $\mathscr B_w$ who takes the object $\mathscr O$,
 2. the losers $\mathscr B_l$,
-3. the winner's price $p_w$,
-4. the losers' price $p_l$.
+3. the winner's payment $p_w$,
+4. the losers' payment $p_l$.
 
 In the above bullet points, 1 and 2 are determined by the allocation rules, while 3 and 4 are determined by the payment rules.
 
 In auction theory, it is important to understand what the auction leads to, aka the equilibrium. To achieve this, we will come up with a formal representation of an auction in the following sections.
 
-## Expected Utility
 
-Technically speaking, the valuation $v_i$ doesn't necessarily equate to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
-
-To measure the payoff of a bidding price $b_i$ for bidder $\mathscr B_i$, we introduce the expected utility, $\bar U_i$, e.g.,
-
-\begin{equation}
-\bar u_i = P(\mathrm{win}) (v_i - b_i) + P(\mathrm{lose}) 0 = P(\mathrm{win}) (v_i - b_i),
-\end{equation}
-
-where $P(\mathrm{win})$ is the probability of winning and $P(\mathrm{lose})$ is the probability of losing.
 
 ## Game, Mechanism, and Auction
 
@@ -101,6 +91,33 @@ The way we split the mechanism map $M$ into $X$ and $\mathbb{R}^n$ makes it a qu
 {{</info>}}
 
 
+## Risk Attitude
+
+Technically speaking, the valuation $v_i$ doesn't necessarily equate to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
+
+The payoff of $\mathscr B_i$ who bids with $b_i$ and valuation $v_i$ is $v_i - b_i$. The simplest definition of the utility function is
+
+{{<math>}}
+\begin{equation}
+u_i = v_i - b_i.
+\label{eqn-auction-utility-payoff}
+\end{equation}
+{{</math>}}
+
+Notice that this utility function only depends on the choice of the bidder. Though useful, this definition doesn't reflect the personalities of the bidder. For the personalities, we introduce a new term related to the payment $p_i$, so that the utility becomes
+
+{{<math>}}
+\begin{equation}
+u_i =  v_i - b_i - f_i,
+\label{eqn-auction-utility-payoff-and-payment}
+\end{equation}
+{{</math>}}
+
+where $f_i$ is a function of the payment. The risk attitude is best tested in a fair lottery where the expected payoff is the same as the investment. In such a fair lottery, the utility for \ref{eqn-auction-utility-payoff-and-payment} depends on the payment and the willingness to pay is different at different costs.
+
+Risk neutral bidders are willing to participate at different costs based on payoff. Risk aversion bidders are less willing to participate at higher costs and risk seeking bidders are more willing to participate at higher costs[^ShohamLeyton-Brown].
+
+
 ## Types of Auctions
 
 There exist many different types of auctions. Base on the allocation rules and payment rules, we may have first-price auction (FPA), second-price auction (SPA), English ascending-bid auction, Dutch descending-bid auction, etc[^Klemperer]. Shoham and Leyton-Brown have provided a list of canonical auctions in their book[^ShohamLeyton-Brown].
@@ -112,7 +129,16 @@ There are two key relations:
 1. map from valuation $v_i$ to bid $b_i$, aka bidding function,
 2. map from bidding $b_i$ to the probability of winning $P(\mathrm{win})$.
 
-Given the probability of winning, valuation, and bid, one could usually calculate the expected utility $\bar U_i$.
+Given the probability of winning, valuation, and bid, one could usually calculate the expected utility $\bar U_i$ for risk neural bidders.
+
+To measure the expected payoff of a bidding price $b_i$ for bidder $\mathscr B_i$, we introduce the expected utility, $\bar U_i$, e.g.,
+
+\begin{equation}
+\bar u_i = P(\mathrm{win}) (v_i - b_i) + P(\mathrm{lose}) 0 = P(\mathrm{win}) (v_i - b_i),
+\end{equation}
+
+where $P(\mathrm{win})$ is the probability of winning and $P(\mathrm{lose})$ is the probability of losing.
+
 
 
 
