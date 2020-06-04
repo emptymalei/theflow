@@ -8,25 +8,34 @@ weight: 1
 
 Auctions are allocation mechanisms[^munoz].
 
-{{< info title="What is an Auction">}}
-An auction has four factors: the seller $\mathscr S$, the bidders $\\{\mathscr B_i\\}$, the object $\mathscr O$ to bid on, and a set of rules $\\{\mathscr R_i\\}$ to determine the winner. Each bidder $\mathscr B_i$ decides on a valuation $v_i$ of the object $\mathscr O$.
+{{< info title="Notations">}}
+Naively, an auction is observed to have several factors. To save keystrokes, we use a set of symbols to denote the variables:
+
+1. the seller $\mathscr S$,
+2. the bidders $\\{\mathscr B_i\\}$,
+3. the object $\mathscr O$ to bid on,
+4. the bidding prices $\\{b_i\\}$.
+
 {{< /info >}}
 
-The rules may be very different but they should have two components, the allocation rule and the payment rule. A simple yet interesting example of the payment rule is that of the Vickrey auction. Vicker auction is a type of sealed-bid auction or blind auction, where the bidders have no information about the bidding price of other bidders. In a **Vickrey auction**, the winner pays the **second-highest price**[^Vickrey].
+In an auction, each bidder $\mathscr B_i$ decides on a valuation $v_i$ of the object $\mathscr O$ and bid with a bidding price $b_i$ based on the valuation.
 
-The outcome of the auction will be
+The rules may be very different in different actions but they should have two components, how the object is allocated (**allocation rule**) and how the bidders are paying (**payment rule**). A simple yet interesting example of the payment rule is that of a Vickrey auction. Vickrey auction is a type of sealed-bid auction or blind auction, where the bidders have no information about the bidding price of other bidders. In a **Vickrey auction**, the winner pays the **second-highest price**[^Vickrey].
 
-0. the bidders offered bidding prices $\{b_i\}$,
+In general, we will observe that an auction has
+
 1. the winner $\mathscr B_w$ who takes the object $\mathscr O$,
-2. the winner's price $p_w$,
-3. the losers $\mathscr B_l$,
+2. the losers $\mathscr B_l$,
+3. the winner's price $p_w$,
 4. the losers' price $p_l$.
 
-In the following sections, we will come up with a formal representation of an auction.
+In the above bullet points, 1 and 2 are determined by the allocation rules, while 3 and 4 are determined by the payment rules.
+
+In auction theory, it is important to understand what the auction leads to, aka the equilibrium. To achieve this, we will come up with a formal representation of an auction in the following sections.
 
 ## Expected Utility
 
-The valuation $v_i$ doesn't necessarily equate to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
+Technically speaking, the valuation $v_i$ doesn't necessarily equate to the bidding price $b_i$ of bidder $\mathscr B_i$. The relation between valuation $v_i$ and bidding price $b_i$ is called the **bidding function**.
 
 To measure the payoff of a bidding price $b_i$ for bidder $\mathscr B_i$, we introduce the expected utility, $\bar U_i$, e.g.,
 
@@ -94,13 +103,11 @@ The way we split the mechanism map $M$ into $X$ and $\mathbb{R}^n$ makes it a qu
 
 ## Types of Auctions
 
-There exist many different types of auctions. Base on the allocation rules and payment rules, we may have first-price auction (FPA), second-price auction (SPA), English ascending-bid auction, Dutch descending-bid auction, etc[^Klemperer]. Shoham and Leyton-Brown show a list of canonical auctions in their book[^ShohamLeyton-Brown].
-
-
+There exist many different types of auctions. Base on the allocation rules and payment rules, we may have first-price auction (FPA), second-price auction (SPA), English ascending-bid auction, Dutch descending-bid auction, etc[^Klemperer]. Shoham and Leyton-Brown have provided a list of canonical auctions in their book[^ShohamLeyton-Brown].
 
 ### First-price Auction
 
-There are three key relations:
+There are two key relations:
 
 1. map from valuation $v_i$ to bid $b_i$, aka bidding function,
 2. map from bidding $b_i$ to the probability of winning $P(\mathrm{win})$.
