@@ -129,15 +129,15 @@ There are two key relations:
 1. map from valuation $v_i$ to bid $b_i$, aka bidding function,
 2. map from bidding $b_i$ to the probability of winning $P(\mathrm{win})$.
 
-Given the probability of winning, valuation, and bid, one could usually calculate the expected utility $\bar U_i$ for risk neural bidders.
-
 To measure the expected payoff of a bidding price $b_i$ for bidder $\mathscr B_i$, we introduce the expected utility, $\bar U_i$, e.g.,
 
 \begin{equation}
 \bar u_i = P(\mathrm{win}) (v_i - b_i) + P(\mathrm{lose}) 0 = P(\mathrm{win}) (v_i - b_i),
 \end{equation}
 
-where $P(\mathrm{win})$ is the probability of winning and $P(\mathrm{lose})$ is the probability of losing.
+where $P(\mathrm{win})$ is the probability of winning and $P(\mathrm{lose})$ is the probability of losing. Given the probability of winning, valuation, and bid, one could usually calculate the expected utility $\bar U_i$.
+
+There is no dominant strategies in first-price sealed auction. Everyone could set their bid lower than their valuation and win. That being said, the bid of first-price auctions do not necessarily approach one's valuation. However, using the expected utility, it is proven that the strategy is to bid with $\frac{n-1}{n}v_i$ where $n$ is the number of bidders and $v_i$ is its valuation, given the condition that bidders are risk-neutral with valuations being a uniform distribution. (Theorem 11.1.3 in Shoham 2008)[^ShohamLeyton-Brown].
 
 
 
