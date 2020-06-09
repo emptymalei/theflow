@@ -7,7 +7,7 @@ taxonomies:
 
 
 params:
-  description: I learn about logistics by writing about it.
+  description: Notes for data scientists in the logistics industry.
   icon_set: ionicons
   colors:
     primary: '#277e98'
