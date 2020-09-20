@@ -5,7 +5,7 @@ weight: 3
 tags:
  - Road Freight
  - Economics
-draft: true
+draft: false
 ---
 
 In this section, we will be looking into the so-called origin-destination matrix, or the OD matrix. The OD matrix tells us the trip distribution between a pair of locations $(p, q)$. There are many representations of the OD matrix. It can be represented using a matrix, a network, or the generating process behind it.
