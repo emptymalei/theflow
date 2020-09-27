@@ -1,7 +1,7 @@
 ---
 title: The Origin-Destination Matrix
 description: The OD matrix is a very useful tool to analyze the supply and demand
-weight: 3
+weight: 4
 tags:
  - Road Freight
  - Economics
