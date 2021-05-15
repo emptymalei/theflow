@@ -1,54 +1,77 @@
 title: "The Flow"
-theme: tract
+languageCode: "en-US" # Controls html lang attribute
+theme: connectome
 copyright: Lei Ma
+paginate: 12 # Number of posts to show before paginating
 
-taxonomies:
-  tag: tags
-
-
-params:
-  description: Notes for data scientists in the logistics industry.
-  icon_set: ionicons
-  colors:
-    primary: '#277e98'
-    secondary: '#1e88e5'
-  fonts:
-    - name: Alata
-      sizes:
-        - 400
-      type: sans_serif
-    - name: Roboto Mono
-      sizes:
-        - 400
-      type: monospace
-  social:
-    linkedin:
-      id: leima137
-    github:
-      repo: emptymalei/theflow
-
+enableRobotsTXT: true # Suggested, it generates a robots.txt
+googleAnalytics: "" # Optional, add tracking Id for analytics
+SectionPagesMenu: "main" # Enable menu system for lazy bloggers
 
 menu:
   main:
     - name: Road Freight
+      weight: 1
       identifier: rf
       url: /road-freight
-      weight: 1
-    - name: Road Freight Basics
-      parent: rf
-      url: /road-freight/basics
-    - name: Economics
-      identifier: econ
-      url: /economics
+  topright:
+    - name:
       weight: 2
-    - name: Microeconomics
-      identifier: mecon
-      parent: econ
-      url: /economics/microeconomics
+      identifier: tags
+      url: /tags/
+      pre: '<i class="fas fa-tags"></i>'
+    - name:
       weight: 3
-    - name: Auction Theory
-      parent: econ
-      url: /economics/auction-theory/auction-theory-basics
+      identifier: graph
+      url: /graph
+      pre: '<i class="fas fa-project-diagram"></i>'
+
+taxonomies:
+    tag: "tags"
+    link: "links"
+
+params:
+  theme_variant: "litera" # possible value for the theme_variant `cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,pulse,sandstone,simplex,slate,solar,spacelab,superhero,united,yeti`
+  description: "Notes for data scientists in the logistics industry."
+  favicon: "/logos/logo-square.png" # Path to favicon
+  logo: "/logos/logo-square.png" # logo of the website
+  projects: # This is the menu item for the list of projects and the title of project list page
+    section: projects # The section where we list all the projects
+    indicator: "Chapters"
+  splash: "/img/splash/undraw_to_the_moon_v1mv.svg" # This is the splash image for the landing page. The image is shown in the top left of the page.
+  powered_by: "love" # Optional, controls name display on footer
+  hide_author: false # Optional, set true to hide author name on posts
+  images: # Suggested, controls default OpenGraph images controls author name display on meta tag
+  github: "emptymalei" # Optional, to display link to github account in menu bar
+  twitter: "" # Optional, to display link to twitter account in menu bar
+  author: "L M" # Default author name and the name to be shown in the footer
+  editURL: "https://github.com/emptymalei/theflow/edit/master/content/"
+  utterances: # comment system: utterances (https://utteranc.es/) parameters
+    repo: "emptymalei/theflow"  # repo="[ENTER REPO HERE]", the comments will appear as issues in this repository on github.
+    term: pathname               # issue-term="pathname"
+    theme: github-light          # theme="github-light"
+  lyket:
+    api_key: "4df20b7e32f469fed5dc53f5ab39d8"
+    lyket_type: "updown"
+
+outputFormats:
+  data:
+    baseName: "data"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
+  network:
+    baseName: "network"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "data"
+    - "network"
 
 
 
@@ -56,7 +79,3 @@ markup:
   highlight:
     style: dracula
 
-outputs:
-  home:
-    - HTML
-    - JSON

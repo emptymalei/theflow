@@ -8,7 +8,7 @@ weight: 1
 
 Auctions are allocation mechanisms[^munoz].
 
-{{< info title="Notations">}}
+{{< message class="info" title="Notations">}}
 Naively, an auction is observed to have several factors. To save keystrokes, we use a set of symbols to denote the variables:
 
 1. the seller $\mathscr S$,
@@ -16,7 +16,7 @@ Naively, an auction is observed to have several factors. To save keystrokes, we 
 3. the object $\mathscr O$ to bid on,
 4. the bidding prices $\\{b_i\\}$.
 
-{{< /info >}}
+{{< /message >}}
 
 In an auction, each bidder $\mathscr B_i$ decides on a valuation $v_i$ of the object $\mathscr O$ and bid with a bidding price $b_i$ based on the valuation.
 
@@ -39,7 +39,7 @@ In auction theory, it is important to understand what the auction leads to, aka 
 
 The Bayesian game provides a good theoretical ground for auctions. A Bayesian game is defined by the setting and the mechanism. The setting is the stage and different mechanisms lead to different equilibria and properties.
 
-{{< info title="Bayesian Game Setting">}}
+{{< message class="info" title="Bayesian Game Setting">}}
 A Bayesian game setting is defined by $(N, O, \Theta, p, u)$, where[^ShohamLeyton-Brown]
 
 1. $N$ is a finite set of $n$ agents or players, e.g., bidders $\\{\mathscr B_i\\}$,
@@ -50,9 +50,9 @@ A Bayesian game setting is defined by $(N, O, \Theta, p, u)$, where[^ShohamLeyto
 
 [^ShohamLeyton-Brown]: Y. Shoham and K. Leyton-Brown, “Multiagent Systems: Algorithmic, Game-Theoretic, and logical foundations”, 2008.
 
-{{< /info >}}
+{{< /message >}}
 
-{{< info title="Mechanism">}}
+{{< message class="info" title="Mechanism">}}
 
 A mechanism is defined by $(A, M)$, where[^ShohamLeyton-Brown]
 
@@ -63,7 +63,7 @@ With the mechanism defined, we will be able to design, implement, and measure th
 
 [^ShohamLeyton-Brown]:  Y. Shoham and K. Leyton-Brown, “Multiagent Systems: Algorithmic, Game-Theoretic, and logical foundations”, 2008.
 
-{{< /info >}}
+{{< /message >}}
 
 The fact that auction is an allocation mechanism indicates that the outcome will be two parts, the **allocation** of the object $X$ and the **payment** $\mathbb{R}^n$ in an $n$ bidder auction. Comparing to the Bayesian game, we have the stage
 
@@ -78,7 +78,7 @@ We also have the mechanism
 1. bidding at different prices as actions,
 2. allocation rule (or choice rule) and payment rule map the actions to the allocation results $X$ and payment results $\mathbb{R}^n$, respectively.
 
-{{< info title="Mechanism">}}
+{{< message class="info" title="Mechanism">}}
 
 The way we split the mechanism map $M$ into $X$ and $\mathbb{R}^n$ makes it a quasilinear mechanism, which is defined by a triple $(A_i, \chi, \wp)$, where[^ShohamLeyton-Brown]
 
@@ -88,7 +88,7 @@ The way we split the mechanism map $M$ into $X$ and $\mathbb{R}^n$ makes it a qu
 
 [^ShohamLeyton-Brown]:  Y. Shoham and K. Leyton-Brown, “Multiagent Systems: Algorithmic, Game-Theoretic, and logical foundations”, 2008.
 
-{{</info>}}
+{{</message>}}
 
 
 ## Risk Attitude
@@ -97,12 +97,12 @@ Technically speaking, the valuation $v_i$ doesn't necessarily equate to the bidd
 
 The payoff of $\mathscr B_i$ who bids with $b_i$ and valuation $v_i$ is $v_i - b_i$. The simplest definition of the utility function is
 
-{{<math>}}
+{{<m>}}
 \begin{equation}
 u_i = v_i - b_i.
 \label{eqn-auction-utility-payoff}
 \end{equation}
-{{</math>}}
+{{</m>}}
 
 Notice that this utility function only depends on the choice of the bidder. Though useful, this definition doesn't reflect the personalities of the bidder. For the personalities, we introduce a new term related to the payment $p_i$, so that the utility becomes
 

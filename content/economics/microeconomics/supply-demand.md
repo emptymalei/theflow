@@ -12,7 +12,7 @@ weight: 2
 In this section, we will discuss supply and demand.
 
 
-{{< info title="Notations">}}
+{{< message class="info" title="Notations">}}
 We will be discussing the two aspects of both supply and demand, the values and the functions.
 
 - Price: $P$
@@ -25,7 +25,7 @@ We will be discussing the two aspects of both supply and demand, the values and 
 Some auxiliary variables:
 
 - Income of the community: $I_c$
-{{< /info >}}
+{{< /message >}}
 
 
 The supply function and demand function are functions of many variables. The most discussed variables are prices $P$.
