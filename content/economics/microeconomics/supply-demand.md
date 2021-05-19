@@ -28,7 +28,15 @@ Some auxiliary variables:
 {{< /message >}}
 
 
-The supply function and demand function are functions of many variables, i.e., $Q(\{h_i\})$. The set of variables $\{h_i\}$ are . The most discussed variables is price $P$, i.e., quantity is a function of price $Q(P)$.
+The supply function and demand function are functions of many variables, i.e., $Q(\{h_i\})$. The set of variables $\{h_i\}$ are factors that can have effects on the quantity of demand and quantity of supply. One of the most discussed variables is price $P$, i.e., quantity is a function of price $Q(P)$.
+
+{{< message class="warning" title="A Conservation Law?">}}
+
+However, it makes more sense to think of a conservation law $df(P, Q_s, Q_d) = 0$ as we have constraints on the money that can be spent as well as materials to produce the goods.
+
+However, it won't be easy to find the exact form of this conservation law.
+
+{{< /message >}}
 
 ## Demand
 
