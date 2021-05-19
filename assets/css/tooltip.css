@@ -1,0 +1,53 @@
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+/* preview--card text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 400px;
+  overflow: hidden;
+  background-color: antiquewhite;
+  color: #555;
+  text-align: left;
+  padding: 5px 5px 5px 5px;
+  border-radius: 6px;
+  border-color: firebrick;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  /* left: 0 ; right: 0; bottom: 0; */
+  top: 125%;
+  left: 50%;
+  margin-left: -150px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+/* .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
