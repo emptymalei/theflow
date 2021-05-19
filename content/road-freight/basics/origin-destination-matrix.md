@@ -10,7 +10,7 @@ draft: false
 
 In this section, we will be looking into the so-called origin-destination matrix, or the OD matrix. The OD matrix tells us the trip distribution between a pair of locations $(p, q)$. There are many representations of the OD matrix. It can be represented using a matrix, a network, or the generating process behind it.
 
-{{< info title="Notations">}}
+{{< message class="info" title="Notations">}}
 In this page, we will use the following notations.
 
 1. $P$: a set of origins;
@@ -24,7 +24,7 @@ In this page, we will use the following notations.
 
 
 
-{{< /info >}}
+{{< /message >}}
 
 ## The Matrix
 

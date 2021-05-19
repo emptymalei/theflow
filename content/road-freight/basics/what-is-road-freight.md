@@ -22,7 +22,7 @@ Road freight is a rather complex system. It depends on multiple fields of resear
 
 ## Definition of the Problem
 
-{{< info title="What is Road Freight" >}} The core activity of road freight is to move materials of some properties (weight $W$, volume $V$, and special requirements), $\mathscr L(W,V,\cdots)$, through route $\mathscr R$ in the road network that connects a set of locations $\\{P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n\\}$, under some certain policies $\mathscr P$ (order of locations, speed limits, height limit, travel restrictions, etc), using predefined vehicles $\mathscr V$. {{< /info >}}
+{{< message class="info" title="What is Road Freight" >}} The core activity of road freight is to move materials of some properties (weight $W$, volume $V$, and special requirements), $\mathscr L(W,V,\cdots)$, through route $\mathscr R$ in the road network that connects a set of locations $\\{P_1, P_2, \cdots, P_m, D_1, D_2, \cdots, D_n\\}$, under some certain policies $\mathscr P$ (order of locations, speed limits, height limit, travel restrictions, etc), using predefined vehicles $\mathscr V$. {{< /message >}}
 
 In the problem, four key factors are involved:
 
