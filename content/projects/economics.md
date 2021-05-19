@@ -6,10 +6,11 @@ tags:
   - Introduction
 summary: "Economics is very important in dealing with problems in logistics."
 images:
-  - "/projects/assets/demand_3d.png"
+  - "/projects/assets/neonbrand-sEwtU-qy06c-unsplash.jpg"
 date: 2020-04-27
 sections:
   - economics
+status: "WIP"
 ---
 
 

@@ -28,7 +28,7 @@ Some auxiliary variables:
 {{< /message >}}
 
 
-The supply function and demand function are functions of many variables. The most discussed variables are prices $P$.
+The supply function and demand function are functions of many variables, i.e., $Q(\{h_i\})$. The set of variables $\{h_i\}$ are . The most discussed variables is price $P$, i.e., quantity is a function of price $Q(P)$.
 
 ## Demand
 
