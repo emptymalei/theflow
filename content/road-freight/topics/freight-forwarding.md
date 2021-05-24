@@ -29,11 +29,13 @@ draft: false
 
 Shipment of goods is a complex process [^dpdhl_business_prof].
 
-{{< figure src="../assets/freight-forwarding/shipment_lifecycle_dpdhl.png" title="Shipment Lifecycle" content="Source: [2019 Business Profile | DPDHL](https://www.dpdhl.com/content/dam/dpdhl/en/media-center/investors/documents/business-profiles/DPDHL-Business-Profile-2019.pdf)" >}}
+{{< figure src="../assets/freight-forwarding/shipment_lifecycle_dpdhl.png" title="Shipment Lifecycle" caption="Source: [2019 Business Profile | DPDHL](https://www.dpdhl.com/content/dam/dpdhl/en/media-center/investors/documents/business-profiles/DPDHL-Business-Profile-2019.pdf)" >}}
 
 It takes a lot of effort to deal with the whole process by the shipper. Thus in the 19th century, freight forwarders were born [^ff_wikipedia].
 
 Freight forwarding is not just taking care of the transportation from origin to destination, e.g., taking over the goods and place it on the trucks and transport it to the destination. It cares about the whole lifecycle of the shipment[^Murphy2001] [^Lai2004] [^Pope1985]. For example, a freight forwarder dealing with freight capacity, combining shipments from different shippers for better efficiency, providing legal documents, and dealing with payments.
+
+{{< figure src="../assets/freight-forwarding/lai2004_ff_services.png" title="Logistics Service Capability as Perceived by the Respondent Companies in Hong Kong" caption="Source: [Lai, 2004](http://dx.doi.org/10.1080/1367556042000199011).">}}
 
 The freight forwarding business has been regulated several times in history [^Pope1985].
 
