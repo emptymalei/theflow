@@ -2,6 +2,7 @@
 title: Some Daily Jargons in Road Freight
 description: "This is a collection of jargons for road freight"
 weight: 1
+date: 2021-05-21
 tags:
  - Introduction
  - Topics

@@ -1,0 +1,28 @@
+<section class="section">
+  <div class="container">
+    <article class="post">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content blog-post section" itemprop="articleBody">
+            {{ .Content }}
+          </div>
+        </div>
+        <div class="column">
+          <h2 class="title is-2 has-text-left has-text-info" style="margin-bottom: 1em;">Top
+            Tags</h2>
+          <div class="field is-grouped is-grouped-multiline">
+            {{ range .Site.Taxonomies.tags.ByCount | first 70 }}
+            <div class="control">
+              <div class="tags has-addons">
+                <a href="{{ .Page.Permalink }}" class="tag is-info is-light">{{ .Page.Title }}</a>
+                <a href="{{ .Page.Permalink }}" class="tag">{{ .Count }}</a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </div>
+</section>
