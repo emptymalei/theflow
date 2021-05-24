@@ -37,7 +37,7 @@ Freight forwarding is not just taking care of the transportation from origin to 
 
 The freight forwarding business has been regulated several times in history [^Pope1985].
 
-The internet brought in a lot of new ingredients to the freight forwarding business. Internet gets into the view of the freight forwarders as early as 2000 [^Murphy2001].
+At the end of the 20th century, the internet started to bring in a lot of new ingredients to the freight forwarding business. Internet gets into the view of the freight forwarders as early as 2000 [^Murphy2001].
 
 
 
