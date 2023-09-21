@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+    inputs:
+      whotriggered:
+        description: 'Manual Trigger'
+        default: 'Why'
+        required: false
 
 jobs:
   deploy:
-    runs-on: macos-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
         with:
@@ -17,11 +23,11 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.69.2'
+          hugo-version: '0.117.0'
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --gc --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

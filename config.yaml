@@ -1,3 +1,4 @@
+baseurl: "https://flow.leima.is/" # Controls base URL
 title: "The Flow"
 languageCode: "en-US" # Controls html lang attribute
 theme: connectome
